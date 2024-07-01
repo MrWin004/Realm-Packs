@@ -9,7 +9,7 @@ Minecraft.system.run(function tick(){
 
 				if (tags.filter(tag => tag.startsWith('rank:'))){
 					let ranks = tags.filter(tag => tag.startsWith('rank:')).map(tag => tag.replace('rank:', ''))
-    				ranks = ranks.length ? ranks : ["§aMember"]
+    				ranks = ranks.length ? ranks : ["§aPlayer"]
             	player.nameTag = (`§l§8<§r${ranks.join("§r] [")}§r§l§8> §r§f${player.name}`)
         		} else {
 					player.nameTag = (`§l§8<§r[§aMember§l§8> §r§f${player.name}`)
